@@ -6,7 +6,7 @@ import { Reload } from "@web3uikit/icons";
 function NativeTokens({ wallet, nativeBalances, setNativeBalances }) {
   const getNativeBalances = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/nativeBalances", {
+      const response = await axios.get("https://platter-62s9.vercel.app/nativeBalances", {
         params: {
           address: wallet,
         },
