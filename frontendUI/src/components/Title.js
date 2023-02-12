@@ -48,9 +48,9 @@ const Title = () => {
                 y2="335.048"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#F06D89" />
-                <stop offset="0.213542" stop-color="#854BCF" />
-                <stop offset="1" stop-color="#3FF7A9" />
+                <stop stopColor="#F06D89" />
+                <stop offset="0.213542" stopColor="#854BCF" />
+                <stop offset="1" stopColor="#3FF7A9" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_97_321"
@@ -60,9 +60,9 @@ const Title = () => {
                 y2="335.048"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#F06D89" />
-                <stop offset="0.213542" stop-color="#854BCF" />
-                <stop offset="1" stop-color="#3FF7A9" />
+                <stop stopColor="#F06D89" />
+                <stop offset="0.213542" stopColor="#854BCF" />
+                <stop offset="1" stopColor="#3FF7A9" />
               </linearGradient>
               <linearGradient
                 id="paint2_linear_97_321"
@@ -72,9 +72,9 @@ const Title = () => {
                 y2="335.048"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#F06D89" />
-                <stop offset="0.213542" stop-color="#854BCF" />
-                <stop offset="1" stop-color="#3FF7A9" />
+                <stop stopColor="#F06D89" />
+                <stop offset="0.213542" stopColor="#854BCF" />
+                <stop offset="1" stopColor="#3FF7A9" />
               </linearGradient>
               <linearGradient
                 id="paint3_linear_97_321"
@@ -84,9 +84,9 @@ const Title = () => {
                 y2="335.048"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#F06D89" />
-                <stop offset="0.213542" stop-color="#854BCF" />
-                <stop offset="1" stop-color="#3FF7A9" />
+                <stop stopColor="#F06D89" />
+                <stop offset="0.213542" stopColor="#854BCF" />
+                <stop offset="1" stopColor="#3FF7A9" />
               </linearGradient>
               <linearGradient
                 id="paint4_linear_97_321"
@@ -96,9 +96,9 @@ const Title = () => {
                 y2="335.048"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#F06D89" />
-                <stop offset="0.213542" stop-color="#854BCF" />
-                <stop offset="1" stop-color="#3FF7A9" />
+                <stop stopColor="#F06D89" />
+                <stop offset="0.213542" stopColor="#854BCF" />
+                <stop offset="1" stopColor="#3FF7A9" />
               </linearGradient>
               <linearGradient
                 id="paint5_linear_97_321"
@@ -108,9 +108,9 @@ const Title = () => {
                 y2="335.048"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#F06D89" />
-                <stop offset="0.213542" stop-color="#854BCF" />
-                <stop offset="1" stop-color="#3FF7A9" />
+                <stop stopColor="#F06D89" />
+                <stop offset="0.213542" stopColor="#854BCF" />
+                <stop offset="1" stopColor="#3FF7A9" />
               </linearGradient>
               <linearGradient
                 id="paint6_linear_97_321"
@@ -120,9 +120,9 @@ const Title = () => {
                 y2="335.048"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#F06D89" />
-                <stop offset="0.213542" stop-color="#854BCF" />
-                <stop offset="1" stop-color="#3FF7A9" />
+                <stop stopColor="#F06D89" />
+                <stop offset="0.213542" stopColor="#854BCF" />
+                <stop offset="1" stopColor="#3FF7A9" />
               </linearGradient>
             </defs>
           </svg>
