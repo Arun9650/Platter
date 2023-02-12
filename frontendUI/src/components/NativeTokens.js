@@ -134,14 +134,15 @@ function NativeTokens({ wallet, nativeBalances, setNativeBalances }) {
         <Reload className={"transition-all "}/>
       </h2>
     </div>
-    <table className="table-fixed text-base p-10 w-full     rounded-3xl text-gray-500">
+    <div className="px-10 border rounded">
+    <table className="table-fixed text-base p-10 w-full     rounded-3xl text-white">
       <thead className="p-2">
         {headerGroups.map((headerGroup) => (
           <tr className="border-b
             rounded
           border-gray-500" {...headerGroup.getHeaderGroupProps()}>
           {headerGroup.headers.map((column) => (
-            <th className=" border  rounded  border-gray-500 p-2"
+            <th className=" border-b  rounded  border-gray-500 p-2"
              {...column.getHeaderProps()}>{column.render('Header')}</th>
           ))}
           </tr>
@@ -155,7 +156,7 @@ function NativeTokens({ wallet, nativeBalances, setNativeBalances }) {
             return(
               <tr className="border-b border-blue-500" {...row.getRowProps()}>
               { row.cells.map((cell,idx) => (
-              <td className="border-b border-r border-l
+              <td className="border-b 
               border-gray-500
               p-5" {...cell.getCellProps()} >{cell.render("Cell")}</td>
             ))}
@@ -166,6 +167,7 @@ function NativeTokens({ wallet, nativeBalances, setNativeBalances }) {
           
         </tbody>
     </table>
+    </div>
     </>
   )
 
