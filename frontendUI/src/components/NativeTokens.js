@@ -7,7 +7,7 @@ import { useTable } from "react-table";
 function NativeTokens({ wallet, nativeBalances, setNativeBalances }) {
   const getNativeBalances = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/nativeBalances", {
+      const response = await axios.get("https://platter-cqkw.vercel.app/nativeBalances", {
         params: {
           address: wallet,
         },
