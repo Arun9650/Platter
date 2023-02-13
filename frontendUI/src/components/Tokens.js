@@ -101,7 +101,7 @@ function Tokens({ wallet, tokens, setTokens }) {
 
       <div className="px-8 bg-[#1e1f24]  rounded-3xl">
 
-      <h2 className="text-xl flex items-center text-white py-4 pt-6 self-start gap-3 cursor-pointer font-bold">  ERC20 Coins
+      <h2 onClick={getTokenBalances}  className="text-xl flex items-center text-white py-4 pt-6 self-start gap-3 cursor-pointer font-bold">  ERC20 Coins
                <Reload onClick={getTokenBalances}/>
 
       </h2>
@@ -124,7 +124,7 @@ function Tokens({ wallet, tokens, setTokens }) {
         </thead>
 
         <tbody className="rounded divide-y divide-gray-500" {...getTableBodyProps()}>
-          {rows.map((row) => {
+          {(rows.length> 0 && rows.map((row) => {
             prepareRow(row);
 
             return(
@@ -137,7 +137,7 @@ function Tokens({ wallet, tokens, setTokens }) {
 
             </tr>
             )
-          })}
+          }) ) || (<tr className="flex"><td  className="text-center  border w-full py-5">Click to ERC20 to Load data</td></tr>  )}
           
         </tbody>
     </table>
