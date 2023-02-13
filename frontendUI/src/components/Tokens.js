@@ -61,66 +61,23 @@ function Tokens({ wallet, tokens, setTokens }) {
   );
 
 
-  const data = useMemo(
-    () => [
-      {
-        id: 1,
-        title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-        price: 109.95,
-        description:
-          "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-        category: "men's clothing",
-        image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-        rating: {
-          rate: 3.9,
-          count: 120,
-        },
-      },
-      {
-        id: 2,
-        title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-        price: 109.95,
-        description:
-          "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-        category: "men's clothing",
-        image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-        rating: {
-          rate: 3.9,
-          count: 120,
-        },
-      },
-      {
-        id: 1,
-        title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-        price: 109.95,
-        description:
-          "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-        category: "men's clothing",
-        image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-        rating: {
-          rate: 3.9,
-          count: 120,
-        },
-      },
-    ],
-    []
-  );
+ 
 
 
   const productsData = useMemo(() => [...products], [products]);
 
 
 
-  const productsColumns = useMemo(
-    () =>
-      products[0]
-        ? Object.keys(products[0]).map((key) => {
+  // const productsColumns = useMemo(
+  //   () =>
+  //     products[0]
+  //       ? Object.keys(products[0]).map((key) => {
               
-             return { Header: key, accessor: key }
-            })
-        : [],
-    [products]
-  );
+  //            return { Header: key, accessor: key }
+  //           })
+  //       : [],
+  //   [products]
+  // );
 
   const tableInstance = useTable({columns, data:productsData});
 
@@ -141,9 +98,9 @@ function Tokens({ wallet, tokens, setTokens }) {
 
 
 
-      <div className="px-8  bg-[#1e1f24]  rounded-3xl">
+      <div className="px-8 bg-[#1e1f24]  rounded-3xl">
 
-      <h2 className="text-xl flex items-center text-white py-4 self-start gap-3 cursor-pointer font-bold">  ERC20 Coins
+      <h2 className="text-xl flex items-center text-white py-4 pt-6 self-start gap-3 cursor-pointer font-bold">  ERC20 Coins
                <Reload onClick={getTokenBalances}/>
 
       </h2>
@@ -174,7 +131,7 @@ function Tokens({ wallet, tokens, setTokens }) {
               { row.cells.map((cell,idx) => (
               <td className="border-b
               border-gray-500
-              p-5" {...cell.getCellProps()} >{cell.render("Cell")}</td>
+              py-5 px-2" {...cell.getCellProps()} >{cell.render("Cell")}</td>
             ))}
 
             </tr>
@@ -184,25 +141,6 @@ function Tokens({ wallet, tokens, setTokens }) {
         </tbody>
     </table>
     </div>
-
-    
-
-      {/* {tokens.length > 0 && (
-        <Table
-          pageSize={6}
-          noPagination={true}
-          style={{ width: "740px" }}
-          columnsConfig="200px 200px 200px 100px"
-          className="flex self-start "
-          data={Array.isArray(tokens) ? tokens.map((e) => [e.symbol, e.bal, `$${e.val}`,e.chain] ) : []}
-          header={[
-            <span>Currency</span>,
-            <span>Balance</span>,
-            <span>Value</span>,
-            <span>Chain</span>,
-          ]}
-        />
-      )} */}
       </div>
     </div>
   );

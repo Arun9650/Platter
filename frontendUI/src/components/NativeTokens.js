@@ -134,7 +134,7 @@ function NativeTokens({ wallet, nativeBalances, setNativeBalances }) {
     <div className="px-10 bg-[#1e1f24]  rounded-2xl">
 
 
-    <h2 className="text-xl  cursor-pointer flex py-2 items-center  text-stone-100 self-start gap-3 font-medium"
+    <h2 className="text-xl  cursor-pointer flex py-2  pt-4 items-center  text-stone-100 self-start gap-3 font-medium"
       onClick={() => getNativeBalances()}
       >
         Native Coins
@@ -165,7 +165,7 @@ function NativeTokens({ wallet, nativeBalances, setNativeBalances }) {
               { row.cells.map((cell,idx) => (
               <td className="divide-y 
               
-              p-5" {...cell.getCellProps()} >{cell.render("Cell")}</td>
+              p-5 px-2" {...cell.getCellProps()} >{cell.render("Cell")}</td>
             ))}
 
             </tr>
