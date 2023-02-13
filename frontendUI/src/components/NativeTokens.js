@@ -142,29 +142,29 @@ function NativeTokens({ wallet, nativeBalances, setNativeBalances }) {
       </h2>
 
 
-    <table className="table-fixed text-base  w-full     rounded-3xl text-white">
-      <thead className="pb-2">
+    <table className="table-fixed text-base text-ellipsis w-full     rounded-3xl text-white">
+      <thead className="pb-2 text-ellipsis">
         {headerGroups.map((headerGroup) => (
           <tr className="
-            rounded
+            rounded text-ellipsis overflow-hidden
           border-gray-500" {...headerGroup.getHeaderGroupProps()}>
           {headerGroup.headers.map((column) => (
-            <th className=" border-b  rounded   p-2"
+            <th className=" border-b text-ellipsis overflow-hidden rounded border-gray-500  p-2"
              {...column.getHeaderProps()}>{column.render('Header')}</th>
           ))}
           </tr>
         ))}
         </thead>
 
-        <tbody className="rounded divide-y" {...getTableBodyProps()}>
+        <tbody className="rounded divide-y text-ellipsis divide-gray-500" {...getTableBodyProps()}>
           {rows.map((row) => {
             prepareRow(row);
 
             return(
-              <tr className="divide-y " {...row.getRowProps()}>
+              <tr className="divide-y text-ellipsis overflow-hidden divide-gray-500" {...row.getRowProps()}>
               { row.cells.map((cell,idx) => (
-              <td className="divide-y 
-              
+              <td className="divide-y text-ellipsis
+                divide-gray-500 overflow-hidden
               p-5 px-2" {...cell.getCellProps()} >{cell.render("Cell")}</td>
             ))}
 

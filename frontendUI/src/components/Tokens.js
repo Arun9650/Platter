@@ -16,6 +16,7 @@ function Tokens({ wallet, tokens, setTokens }) {
 
     if (response.data) {
       tokenProcessing(response.data);
+      
     }
   }
 
@@ -122,15 +123,15 @@ function Tokens({ wallet, tokens, setTokens }) {
         ))}
         </thead>
 
-        <tbody className="rounded" {...getTableBodyProps()}>
+        <tbody className="rounded divide-y divide-gray-500" {...getTableBodyProps()}>
           {rows.map((row) => {
             prepareRow(row);
 
             return(
               <tr {...row.getRowProps()}>
               { row.cells.map((cell,idx) => (
-              <td className="border-b
-              border-gray-500
+              <td className="divide-y text-ellipsis
+              divide-gray-500 overflow-hidden
               py-5 px-2" {...cell.getCellProps()} >{cell.render("Cell")}</td>
             ))}
 
