@@ -7,7 +7,7 @@ import { Reload } from "@web3uikit/icons";
 function Tokens({ wallet, tokens, setTokens }) {
 
   async function getTokenBalances() {
-    const response = await axios.get("http://localhost:8080/tokenBalances", {
+    const response = await axios.get("https://platter-cqkw.vercel.app/tokenBalances", {
       params: {
         address: wallet,
        
