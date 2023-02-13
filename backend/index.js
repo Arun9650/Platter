@@ -258,5 +258,3 @@ app.get("/tokenTransfers", tokenTransfersLimiter, async (req, res) => {
     res.send(e.message);
   }
 });
-
-module.exports = app;
