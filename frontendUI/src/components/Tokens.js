@@ -131,19 +131,24 @@ function Tokens({ wallet, tokens, setTokens }) {
 
 
 
+
 {console.log(Array.isArray(tokens) ? tokens.map((e) => [e.symbol, e.bal, `$${e.val}`,e.chain] ) : [])}
 
   return (
-    <div className="flex overflow-hidden flex-col">
-      <div className="tabHeading flex flex-col">
-      <h2 className="text-xl flex items-center self-start gap-3 cursor-pointer font-bold">  ERC20 Coins
+    <div className="flex overflow-hidden  flex-col">
+      <div className="tabHeading flex   flex-col">
+      
+
+
+
+      <div className="px-8  bg-[#1e1f24]  rounded-3xl">
+
+      <h2 className="text-xl flex items-center text-white py-4 self-start gap-3 cursor-pointer font-bold">  ERC20 Coins
                <Reload onClick={getTokenBalances}/>
 
       </h2>
 
 
-
-      <div className="px-8 border border-gray-500 rounded">
       <table className="table-fixed font-normal text-base w-full text-white">
       <thead className="p-2">
         {headerGroups.map((headerGroup) => (

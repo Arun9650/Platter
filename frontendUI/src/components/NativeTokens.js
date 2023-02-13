@@ -123,41 +123,48 @@ function NativeTokens({ wallet, nativeBalances, setNativeBalances }) {
   const {getTableProps, getTableBodyProps, headerGroups, rows, prepareRow} = tableInstance;
 
 
+
+
   return (
 
     <>
     <div>
-      <h2 className="text-xl  cursor-pointer flex items-center pb-3 self-start gap-3 font-medium"
+      
+    </div>
+    <div className="px-10 bg-[#1e1f24]  rounded-2xl">
+
+
+    <h2 className="text-xl  cursor-pointer flex py-2 items-center  text-stone-100 self-start gap-3 font-medium"
       onClick={() => getNativeBalances()}
       >
         Native Coins
         <Reload className={"transition-all "}/>
       </h2>
-    </div>
-    <div className="px-10 border rounded">
-    <table className="table-fixed text-base p-10 w-full     rounded-3xl text-white">
-      <thead className="p-2">
+
+
+    <table className="table-fixed text-base  w-full     rounded-3xl text-white">
+      <thead className="pb-2">
         {headerGroups.map((headerGroup) => (
-          <tr className="border-b
+          <tr className="
             rounded
           border-gray-500" {...headerGroup.getHeaderGroupProps()}>
           {headerGroup.headers.map((column) => (
-            <th className=" border-b  rounded  border-gray-500 p-2"
+            <th className=" border-b  rounded   p-2"
              {...column.getHeaderProps()}>{column.render('Header')}</th>
           ))}
           </tr>
         ))}
         </thead>
 
-        <tbody className="rounded" {...getTableBodyProps()}>
+        <tbody className="rounded divide-y" {...getTableBodyProps()}>
           {rows.map((row) => {
             prepareRow(row);
 
             return(
-              <tr className="border-b border-blue-500" {...row.getRowProps()}>
+              <tr className="divide-y " {...row.getRowProps()}>
               { row.cells.map((cell,idx) => (
-              <td className="border-b 
-              border-gray-500
+              <td className="divide-y 
+              
               p-5" {...cell.getCellProps()} >{cell.render("Cell")}</td>
             ))}
 

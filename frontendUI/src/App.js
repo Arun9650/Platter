@@ -59,7 +59,7 @@ function App() {
         </div>
       </aside>
 
-      <div className="flex  overflow-auto scrollbar-hide md:scrollbar-default  border-blue-800 border w-full bg-[#16161a]  justify-center h-screen">
+      <div className="flex  overflow-auto scrollbar-hide md:scrollbar-default  border-blue-800 border w-full bg-[#101213]  justify-center h-screen">
         <main className=" max-h-screen   scrollbar-hide md:scrollbar-default  lg:w-3/4 w-full  overflow-auto">
           <WalletInputs
             chain={chain}
